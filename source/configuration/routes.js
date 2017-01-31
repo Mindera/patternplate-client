@@ -6,35 +6,35 @@ const routes = {
 	enabled: {
 		index: {
 			enabled: true,
-			path: '/'
+			path: '/tvg-ui/'
 		},
 		pattern: {
 			enabled: true,
-			path: '/pattern/:path+'
+			path: '/tvg-ui/pattern/:path+'
 		},
 		demo: {
 			enabled: true,
-			path: '/demo/:id+'
+			path: '/tvg-ui/demo/:id+'
 		},
 		component: {
 			enabled: true,
-			path: '/demo/:id+/component.js'
+			path: '/tvg-ui/demo/:id+/component.js'
 		},
 		script: {
 			enabled: true,
-			path: '/script/:path+'
+			path: '/tvg-ui/script/:path+'
 		},
 		style: {
 			enabled: true,
-			path: '/style/:path+'
+			path: '/tvg-ui/style/:path+'
 		},
 		static: {
 			enabled: true,
-			path: '/static/:path+'
+			path: '/tvg-ui/static/:path+'
 		},
 		zcatch: {
 			enabled: true,
-			path: '!(/api/)(.*)'
+			path: '!(/tvg-ui/api/)(.*)'
 		}
 	}
 };

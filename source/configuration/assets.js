@@ -1,5 +1,5 @@
 const assets = {
-	'browserify': {
+	browserify: {
 		'extensions': ['.jsx', '.js', '.json'],
 		'insertGlobals': true
 	}

@@ -36,7 +36,7 @@ export default async function renderPage(application, pageUrl, filters = {}) {
 	const parsed = url.parse(pageUrl);
 	const depth = parsed.pathname.split('/').filter(Boolean).length;
 	const query = queryString.parse(parsed.query);
-	const base = depth > 0 ? fill(Array(depth), '..').join('/') : '.';
+	const base = depth > 0 ? `${fill(Array(depth), '..').join('/')}/tvg-ui` : '.';
 
 	const id = getIdByPathname(parsed.pathname);
 

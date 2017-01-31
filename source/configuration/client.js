@@ -1,7 +1,7 @@
 const client = {
 	'host': 'localhost',
 	'port': '1338',
-	'path': '/'
+	'path': '/tvg-ui/'
 };
 
 export default client;
