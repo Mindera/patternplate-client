@@ -1,0 +1,21 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _reduxActions = require('redux-actions');
+
+var defaultValue = false;
+
+var locationChangeHandler = function locationChangeHandler(_, _ref) {
+	var payload = _ref.payload;
+
+	return payload.query['source-expanded'] === 'true';
+};
+
+exports.default = (0, _reduxActions.handleActions)({
+	'@@router/LOCATION_CHANGE': locationChangeHandler
+}, defaultValue);
+module.exports = exports['default'];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NvdXJjZS9hcHBsaWNhdGlvbi9yZWR1Y2Vycy9zb3VyY2UtZXhwYW5kZWQuanMiXSwibmFtZXMiOlsiZGVmYXVsdFZhbHVlIiwibG9jYXRpb25DaGFuZ2VIYW5kbGVyIiwiXyIsInBheWxvYWQiLCJxdWVyeSJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7O0FBRUEsSUFBTUEsZUFBZSxLQUFyQjs7QUFFQSxJQUFNQyx3QkFBd0IsU0FBeEJBLHFCQUF3QixDQUFDQyxDQUFELFFBQWtCO0FBQUEsS0FBYkMsT0FBYSxRQUFiQSxPQUFhOztBQUMvQyxRQUFPQSxRQUFRQyxLQUFSLENBQWMsaUJBQWQsTUFBcUMsTUFBNUM7QUFDQSxDQUZEOztrQkFJZSxpQ0FBYztBQUM1Qiw2QkFBNEJIO0FBREEsQ0FBZCxFQUVaRCxZQUZZLEMiLCJmaWxlIjoic291cmNlLWV4cGFuZGVkLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtoYW5kbGVBY3Rpb25zfSBmcm9tICdyZWR1eC1hY3Rpb25zJztcblxuY29uc3QgZGVmYXVsdFZhbHVlID0gZmFsc2U7XG5cbmNvbnN0IGxvY2F0aW9uQ2hhbmdlSGFuZGxlciA9IChfLCB7cGF5bG9hZH0pID0+IHtcblx0cmV0dXJuIHBheWxvYWQucXVlcnlbJ3NvdXJjZS1leHBhbmRlZCddID09PSAndHJ1ZSc7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBoYW5kbGVBY3Rpb25zKHtcblx0J0BAcm91dGVyL0xPQ0FUSU9OX0NIQU5HRSc6IGxvY2F0aW9uQ2hhbmdlSGFuZGxlclxufSwgZGVmYXVsdFZhbHVlKTtcbiJdfQ==

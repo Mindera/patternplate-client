@@ -1,0 +1,21 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.type = undefined;
+
+var _ = require('./');
+
+exports.default = toggleKeyboardShortcuts;
+var type = exports.type = 'TOGGLE_KEYBOARD_SHORTCUTS';
+
+function toggleKeyboardShortcuts() {
+	return function (dispatch, getState) {
+		var lightbox = getState().lightbox === 'shortcuts' ? null : 'shortcuts';
+		dispatch((0, _.patchLocation)({ query: { lightbox: lightbox } }));
+	};
+}
+
+toggleKeyboardShortcuts.type = type;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NvdXJjZS9hcHBsaWNhdGlvbi9hY3Rpb25zL3RvZ2dsZS1rZXlib2FyZC1zaG9ydGN1dHMuanMiXSwibmFtZXMiOlsidG9nZ2xlS2V5Ym9hcmRTaG9ydGN1dHMiLCJ0eXBlIiwiZGlzcGF0Y2giLCJnZXRTdGF0ZSIsImxpZ2h0Ym94IiwicXVlcnkiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7a0JBRWVBLHVCO0FBQ1IsSUFBTUMsc0JBQU8sMkJBQWI7O0FBRVAsU0FBU0QsdUJBQVQsR0FBbUM7QUFDbEMsUUFBTyxVQUFDRSxRQUFELEVBQVdDLFFBQVgsRUFBd0I7QUFDOUIsTUFBTUMsV0FBV0QsV0FBV0MsUUFBWCxLQUF3QixXQUF4QixHQUFzQyxJQUF0QyxHQUE2QyxXQUE5RDtBQUNBRixXQUFTLHFCQUFjLEVBQUNHLE9BQU8sRUFBQ0Qsa0JBQUQsRUFBUixFQUFkLENBQVQ7QUFDQSxFQUhEO0FBSUE7O0FBRURKLHdCQUF3QkMsSUFBeEIsR0FBK0JBLElBQS9CIiwiZmlsZSI6InRvZ2dsZS1rZXlib2FyZC1zaG9ydGN1dHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge3BhdGNoTG9jYXRpb259IGZyb20gJy4vJztcblxuZXhwb3J0IGRlZmF1bHQgdG9nZ2xlS2V5Ym9hcmRTaG9ydGN1dHM7XG5leHBvcnQgY29uc3QgdHlwZSA9ICdUT0dHTEVfS0VZQk9BUkRfU0hPUlRDVVRTJztcblxuZnVuY3Rpb24gdG9nZ2xlS2V5Ym9hcmRTaG9ydGN1dHMoKSB7XG5cdHJldHVybiAoZGlzcGF0Y2gsIGdldFN0YXRlKSA9PiB7XG5cdFx0Y29uc3QgbGlnaHRib3ggPSBnZXRTdGF0ZSgpLmxpZ2h0Ym94ID09PSAnc2hvcnRjdXRzJyA/IG51bGwgOiAnc2hvcnRjdXRzJztcblx0XHRkaXNwYXRjaChwYXRjaExvY2F0aW9uKHtxdWVyeToge2xpZ2h0Ym94fX0pKTtcblx0fTtcbn1cblxudG9nZ2xlS2V5Ym9hcmRTaG9ydGN1dHMudHlwZSA9IHR5cGU7XG4iXX0=
